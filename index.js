@@ -32,6 +32,9 @@ let persons = [
       "number": "39-23-6423122"
     }
 ]
+app.get('/', (req, res) => {
+  res.send('<h1>Phonebook API is running</h1>')
+})
 
 app.get('/api/persons', (request, response) => {
     response.json(persons)
