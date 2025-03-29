@@ -50,8 +50,6 @@ app.post('/api/persons', (req, res, next) => {
       res.json(savedPerson)
     })
     .catch(error => next(error))
-  
-
 })
 
 app.get('/info', (req, res) => {
@@ -72,7 +70,7 @@ app.put('/api/persons/:id', (req, res, next) => {
   Person.findByIdAndUpdate(
     req.params.id,
     person,
-    { new: true, runValidators: true, context: 'query' } 
+    { new: true, runValidators: true, context: 'query' }
   )
     .then(updatedPerson => {
       res.json(updatedPerson)
