@@ -1,0 +1,1 @@
+.successful,.error{display:flex;align-items:center;border:4px solid;height:40px;margin:10px 0;width:100vw;background-color:#979797;font-size:large}.successful{border-color:green;color:#004f00}.error{border-color:red;color:#b70000}
